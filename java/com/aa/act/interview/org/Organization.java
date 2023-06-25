@@ -31,7 +31,7 @@ public abstract class Organization {
 				root.setEmployee(Optional.of(worker));
 				return Optional.of(root);
 			} else {
-				// The null check is not STRICTLY null for this exercise, but it feels wrong not
+				// The null check is not STRICTLY needed for this exercise, but it feels wrong not
 				// to include it.
 				Position foundJob = this.findPositionForHire(root.getDirectReports(), title);
 				if (foundJob != null) {
